@@ -15,7 +15,7 @@ int main(){
     printf("Punya kartu member? (1=ya, 0=tidak): ");
     scanf("%d", &member);
 
-    total = tarif * durasi;
+    total = tarif * durasi;n
     total = total - (total * 0.05 * member); 
 
     printf("Total biaya parkir = Rp%.0f\n", total);

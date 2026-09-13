@@ -9,18 +9,26 @@
 //- Menampilkan seluruh data barang ke layar
 
 #include <stdio.h>
-#include <stdlib.h>
 int main(){
-    char namaBarang[] = "Kabel HDMI";
-    char kodeBarang[4] = "007";  
+    char namaBarang[50];
+    char kodeBarang[4];  
     float berat;
 
+
+    printf("Masukkan kode barang (3 digit): ");
+    scanf(" %[^\n]",kodeBarang);
+    printf("Masukkan nama barang: ");
+    scanf(" %[^\n]",namaBarang);
     printf("Masukkan berat barang (kg): ");
     scanf("%f", &berat);
 
+
+    printf("\n--- Data Barang Gudang ---\n");
     printf("Kode Barang  : %s\n", kodeBarang);
     printf("Nama Barang  : %s\n", namaBarang);
     printf("Berat Barang : %.2f kg\n", berat);
 
     return 0;
+
+    
 }

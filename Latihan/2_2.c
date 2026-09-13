@@ -10,7 +10,7 @@ int main() {
 
     float luas = phi + radius * radius;
 
-    printf("Luas = %d", luas); //dibikin salah variablenya
+    printf("Luas = %d", luas); 
 
     return 0;
 }
