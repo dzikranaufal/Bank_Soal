@@ -2,26 +2,32 @@
 
 int main(){
 
-    int usia, statusSehat, statusIzin;
+    int nilai[5];
 
-    printf("masukan usia pendaki: ");
-    scanf("%d", &usia);
-    printf("masukan status sehat (1 = ya / 0 = tidak): ");
-    scanf("%d", &statusSehat);
+    //input satu satu manual
+    printf("Masukan 5 nilai: ");
+    scanf("%d", &nilai[0]);
+    scanf("%d", &nilai[1]);
+    scanf("%d", &nilai[2]);
+    scanf("%d", &nilai[3]);
+    scanf("%d", &nilai[4]);
 
-    if(usia >= 15 && usia <= 55  && statusSehat == 1){
-        printf("Masukan status izin (1=punya / 0 = tidak punya): ");
-        scanf("%d", &statusIzin);
-        if(statusIzin == 1){
-            printf("pendakian disetujui");
-        }else if(statusIzin == 0){
-            printf("pendakian ditunda, surat izin belum lengkap");
-        }else{
-            printf("summit diroblox");
-        }
-    }else{
-        printf("pendakian tidak diperbolehkan");
+    //input menggunakan for
+    printf("Masukan 5 nilai: ");
+    for(int i = 0; i < 5; i++){
+        scanf("%d", &nilai[i]);
     }
+
+    //mengetahui jumlah
+    int total = 0;
+
+    for(int i = 0; i < 5; i++){
+        total = total + nilai[i];
+    }
+
+    printf("Jumlah Nilai : %d", total);
+
+
 
 
 
